@@ -1,0 +1,27 @@
+Use as a guide:
+http://linkedin.github.com/glu/docs/latest/html/tutorial.html
+
+
+** make sure all agents, consoles and zookeepers are stopped
+
+1. init lab
+	./bin/tutorial.sh setup
+2. start the tutorial
+	./bin/tutorial.sh start
+
+3. login (admin/admin)
+
+4. Establish a fabric if it doesn't exist
+	Admin Screen
+	name: 		glu-dev-1
+	zk connect:	localhost:2181
+	zk timeout:	30s
+
+5. View the Agent
+6. View log Files
+7. View Processes
+7a. Kill a process
+8. Load a model
+	http://localhost:8080/glu/repository/systems/sample-webapp-system.json
+8a. View the Model!
+	browse to: http://localhost:8080/glu/repository/systems/sample-webapp-system.json
