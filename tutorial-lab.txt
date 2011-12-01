@@ -25,3 +25,32 @@ http://linkedin.github.com/glu/docs/latest/html/tutorial.html
 	http://localhost:8080/glu/repository/systems/sample-webapp-system.json
 8a. View the Model!
 	browse to: http://localhost:8080/glu/repository/systems/sample-webapp-system.json
+**
+9. Lets load a different model.. load (after a review)
+https://raw.github.com/kensipe/glu-lab/master/another-sample-system.json
+
+10. Goto the dashboard
+11. Select Plans
+12.  Select Deploy and Execute it!
+12. Browse to http://localhost:9000/sample-app/home.jsp
+13. (In Console) Select Model
+14. Select top model, change "contextPath" to "/sample" and Save
+15. Visit the dashboard
+16. Examine the delta and fix it
+
+17. Go back to the model load and load the tutorial model
+18. Deploy it!
+
+
+Lab Script Review:  
+1. Review the Jetty Deployment Script
+	http://localhost:8080/glu/repository/scripts/org.linkedin.glu.script-jetty-4.0.0/JettyGluScript.groovy
+2. look at the script state for pid and port
+3. determine where these values are set
+4. (In Console) Set Agents, agent-1
+5. select the "View Details" button
+6. review the the scriptState
+
+
+** View the Agent Logs!
+
