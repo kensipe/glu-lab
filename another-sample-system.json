@@ -1,0 +1,42 @@
+{
+  "agentTags": {
+    "agent-1": ["osx"]
+  },
+  "entries": [
+    {
+      "agent": "agent-1",
+      "initParameters": {
+        "skeleton": "http://localhost:8080/glu/repository/tgzs/jetty-distribution-7.2.2.v20101205.tar.gz",
+        "port": 9000,
+        "webapps": [
+          {
+            "war": "https://github.com/kensipe/glu-lab/raw/master/sample.war",
+            "contextPath": "/sample",
+            "monitor": "/monitor"
+          }
+          ]
+      },
+      "metadata": {
+        "cluster": "c1",
+        "container": {"name": "sample"},
+        "product": "product2",
+        "version": "1.0.1"
+      },
+      "mountPoint": "/sample/i001",
+      "script": "http://localhost:8080/glu/repository/scripts/org.linkedin.glu.script-jetty-4.0.0/JettyGluScript.groovy",
+      "tags": [
+        "frontend",
+        "webapp"
+      ]
+    }
+  ],
+  "fabric": "glu-dev-1",
+  "metadata": {"product": {
+    "product1": {
+      "name": "product2",
+      "version": "1.0.1"
+    }
+  },
+    "name": "Lab System Model"
+  }
+}
