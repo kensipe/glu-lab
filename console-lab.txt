@@ -1,0 +1,12 @@
+The Console is a web application.  There are 2 options... install the console to tomcat or web application server.  War file is located at: console-server/glu/repository/wars/org.linkedin.glu.console-webapp-4.0.0.war
+
+The second option is run the script from the glu directory which runs a jetty server.
+
+Lab: Console Start
+1. ./bin/console-server.sh start
+2. browse: http://localhost:8080/console
+3. admin / admin are the default credentials
+
+... config...
+
+
