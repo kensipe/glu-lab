@@ -1,0 +1,43 @@
+Pre-Lab
+1. must have java 1.6 (JDK)
+
+Lab: Setup ZooKeeper
+1. Download the org.linkedin.zookeeper-server-1.2.1.tar
+2. in a lab directory, untar
+3. cd org.linkedin.zookeeper-server-1.2.1
+4. Examine conf/zoo.cfg
+** This file is fine for our demos
+5. start zookeeper (./bin/zkServer.sh start)
+
+
+Lab: Testing ZooKeeper
+1. Connect to zk (./bin/zkCli.sh )
+** remote: ./bin/zkCli.sh -server 127.0.0.1:2181
+2. type:  help
+3. type:  ls /
+4. type: create /zk_test glu_test
+5. type: ls /
+** a node was created
+6. type: get /zk_test
+7. type: set /zk_test 
+8. type: get /zk_test
+** BTW tab completion does work
+9. type: delete /zk_test
+10. type: quit
+11. type: ./bin/zkServer.sh stop
+
+
+** zoo.cfg details **
+minimum config for dev
+tickTime=2000
+dataDir=/var/lib/zookeeper
+clientPort=2181
+
+Lab Review: Productionizing the Zoo
+1. create a text file named myid (unique for each server)
+2. the first servers text file has the value 1
+3. the second server text file has the value 2
+4. then the follow changes are made to the zoo.cfg
+server.1=tom:2888:3888
+server.2=jerry:2888:3888
+
