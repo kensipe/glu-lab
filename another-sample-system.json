@@ -10,8 +10,8 @@
         "port": 9000,
         "webapps": [
           {
-            "war": "https://github.com/kensipe/glu-lab/raw/master/sample.war",
-            "contextPath": "/sample",
+            "war": "https://github.com/kensipe/glu-lab/raw/master/Calendar.war",
+            "contextPath": "/Calendar",
             "monitor": "/monitor"
           }
           ]
