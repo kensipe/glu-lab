@@ -68,6 +68,7 @@ class MyGluScript {
 5. invoke an install
 	./bin/agent-cli.sh -m /geo/i001 -e install
 6. What happens if you invoke "install" again ?
-7. 	./bin/agent-cli.sh -m /geo/i001 -e uninstall
-
-5. in
+7. tail the log
+	tail agent-server/data/logs/org.linkedin.glu.agent-server.out
+	
+8. 	./bin/agent-cli.sh -m /geo/i001 -e uninstall
