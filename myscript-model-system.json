@@ -1,7 +1,4 @@
 {
-  "agentTags": {
-    "agent-1": ["osx"]
-  },
   "entries": [
     {
       "agent": "agent-1",
@@ -14,8 +11,7 @@
       "mountPoint": "/mymount/i001",
       "script": "https://raw.github.com/kensipe/glu-lab/master/MyGluScript.groovy",
       "tags": [
-        "frontend",
-        "webapp"
+        "mytag"
       ]
     }
   ],
