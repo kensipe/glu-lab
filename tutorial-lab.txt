@@ -55,6 +55,12 @@ Go through the rest of the tutorial... then follow the labs below.
 
 ** View the Agent Logs!
 
+Lab: Hello World
+1. browse to: http://localhost:8080/glu/repository/systems/hello-world-system.json
+2. review http://localhost:8080/glu/repository/scripts/org.linkedin.glu.script-hello-world-4.0.0/HelloWorldScript.groovy
+3. Deploy it and review the agent logs
+
+
 Lab Script Creation:
 1. Using the model below as a template create a model.json 
 {
@@ -122,6 +128,3 @@ Lab: Script State Varables
 	** in groovy 'uname'.execute().text
 3. Reload / Redeploy 
 4. View the state variable
-
-
-Lab: Start 
