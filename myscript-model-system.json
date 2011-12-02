@@ -1,0 +1,31 @@
+{
+  "agentTags": {
+    "agent-1": ["osx"]
+  },
+  "entries": [
+    {
+      "agent": "agent-1",
+      "metadata": {
+        "cluster": "c1",
+        "container": {"name": "sample"},
+        "product": "product2",
+        "version": "1.0.1"
+      },
+      "mountPoint": "/mymount/i001",
+      "script": "https://raw.github.com/kensipe/glu-lab/master/MyGluScript.groovy",
+      "tags": [
+        "frontend",
+        "webapp"
+      ]
+    }
+  ],
+  "fabric": "glu-dev-1",
+  "metadata": {"product": {
+    "product1": {
+      "name": "product1",
+      "version": "1.0.1"
+    }
+  },
+    "name": "Lab MyGluScript Model"
+  }
+}
