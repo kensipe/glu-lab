@@ -1,6 +1,7 @@
 class MyGluScript {
 	def port
-	def pid
+	def serverType
+	
 	
 	def install = {
 		println "installing..."
@@ -12,6 +13,7 @@ class MyGluScript {
 	
 	def start = {
 		println "starting..."		
+		serverType = 'uname -a'.execute().text
 	}
 	
 	def stop = {
