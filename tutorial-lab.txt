@@ -51,6 +51,74 @@ Lab Script Review:
 5. select the "View Details" button
 6. review the the scriptState
 
+Go through the rest of the tutorial... then follow the labs below.
 
 ** View the Agent Logs!
 
+Lab Script Creation:
+1. Using the model below as a template create a model.json 
+{
+  "entries": [
+    {
+      "agent": "agent-1",
+      "metadata": {
+        "cluster": "c1",
+        "container": {"name": "sample"},
+        "product": "product2",
+        "version": "1.0.1"
+      },
+      "mountPoint": "/mymount/i001",
+      "script": "** you need your script here **",
+      "tags": [
+        "mytag"
+      ]
+    }
+  ],
+  "fabric": "glu-dev-1",
+  "metadata": {"product": {
+    "product1": {
+      "name": "product1",
+      "version": "1.0.1"
+    }
+  },
+    "name": "Lab MyGluScript Model"
+  }
+}
+
+2. Create a script:
+class MyGluScript {
+		
+	def install = {
+		println "installing..."
+	}
+	
+	def configure = {
+		println "configuring..."		
+	}
+	
+	def start = {
+		println "starting..."		
+	}
+	
+	def stop = {
+		println "stopping..."
+	}
+	
+	def unconfigure = {
+		println "un-configuring..."
+	}
+	
+	def uninstall = {
+		println "uninstalling... we were never here..."
+	}	
+}
+
+3. deploy your model / scripts
+
+Lab: Script State Varables
+1. create a script state varable in the MyGluScript named serverType
+2. during the start closure body, assign the value of the server type in the serverType var
+	**hint: uname 
+	** in groovy 'uname'.execute().text
+3. Reload / Redeploy 
+4. View the state variable
