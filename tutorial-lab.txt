@@ -122,3 +122,6 @@ Lab: Script State Varables
 	** in groovy 'uname'.execute().text
 3. Reload / Redeploy 
 4. View the state variable
+
+
+Lab: Start 
